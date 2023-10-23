@@ -1,7 +1,8 @@
-import { createGlobalStyle, css } from 'styled-components';
+'use client';
+
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
   * {
     margin: 0;
@@ -16,12 +17,13 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-size: 1.6rem;
-    font-family: ${({ theme }) => theme.font.family.primary}
+    color: ${({ theme }) => theme.colors.darkText}
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${({ theme }) => theme.font.family.secondary};
     margin: ${({ theme }) => theme.spacings.large} 0;
+    font-weight: 800;
+    color: ${({ theme }) => theme.colors.primary}
   }
 
   p {
