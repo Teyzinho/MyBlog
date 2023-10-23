@@ -7,6 +7,9 @@ export const theme = {
     mediumGray: '#DDDDDD',
   },
   font: {
+    family: {
+      default: "'Open Sans', sans-serif",
+    },
     sizes: {
       xsmall: '1.2rem',
       small: '1.6rem',

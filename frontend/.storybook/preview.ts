@@ -3,7 +3,7 @@ import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import { GlobalStyles } from '../src/styles/global-style'
 import { theme } from '../src/styles/theme';
 
-/** @type { import('@storybook/react').Preview } */
+/** @type { import('@storybook/nextjs').Preview } */
 const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },

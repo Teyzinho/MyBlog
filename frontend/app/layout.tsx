@@ -17,6 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <ThemeProvider>{children}</ThemeProvider>
