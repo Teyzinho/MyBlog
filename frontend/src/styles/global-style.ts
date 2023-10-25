@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${({ theme }) => theme.font.family.default};
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  /* h1, h2, h3, h4, h5, h6 {
     margin: ${({ theme }) => theme.spacings.large} 0;
     font-weight: 800;
     color: ${({ theme }) => theme.colors.primary}
@@ -43,5 +43,5 @@ export const GlobalStyles = createGlobalStyle`
   table {
     width: 100%;
     overflow-y: auto;
-  }
+  } */
 `;
