@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
 import { MenuLink, MenuLinkProps } from '.';
+import { theme } from '../../styles/theme';
 
 export default {
   title: 'MenuLink',
@@ -12,11 +13,26 @@ export default {
     children: { type: 'string' },
     link: { type: 'string' },
   },
+  parameters: {
+    backgrounds: {
+      default: 'light',
+    },
+  },
 } as Meta;
 
 export const Template: StoryFn<MenuLinkProps> = (args) => {
   return (
-    <div>
+    <div
+      style={{
+        maxWidth: '320px',
+        background: theme.colors.primary,
+        padding: theme.spacings.large,
+      }}
+    >
+      <MenuLink {...args} />
+      <MenuLink {...args} />
+      <MenuLink {...args} />
+      <MenuLink {...args} />
       <MenuLink {...args} />
     </div>
   );

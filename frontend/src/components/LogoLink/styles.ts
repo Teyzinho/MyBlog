@@ -8,7 +8,9 @@ export const Container = styled.a`
     color: inherit;
 
     & img {
-      height: 3rem;
+      height: 15rem;
+      width: 15rem;
+      border-radius: 50%;
       object-fit: cover;
     }
   `}
