@@ -34,4 +34,8 @@ export const theme = {
   media: {
     lteMedium: '(max-width: 768px)',
   },
+  sizes: {
+    max: '96rem',
+    content: '80rem',
+  },
 } as const;
