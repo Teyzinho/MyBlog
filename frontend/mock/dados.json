@@ -1,0 +1,75 @@
+{
+  "data": {
+    "posts": {
+      "data": [
+        {
+          "id": "1",
+          "attributes": {
+            "title": "Primeiro post",
+            "slug": "primeiro-post",
+            "cover": {
+              "data": {
+                "id": "3",
+                "attributes": {
+                  "name": "depressão-em-cães.jpg",
+                  "alternativeText": null,
+                  "url": "https://res.cloudinary.com/dfnyq9hse/image/upload/v1697896397/depressao_em_caes_83051f3c90.jpg"
+                }
+              }
+            },
+            "excerpt": "Primeiro post do blog utilizado como teste",
+            "allowComments": false,
+            "tags": {
+              "data": [
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "games",
+                    "slug": "games"
+                  }
+                },
+                {
+                  "id": "1",
+                  "attributes": {
+                    "displayName": "useState",
+                    "slug": "use-state"
+                  }
+                }
+              ]
+            },
+            "categories": {
+              "data": [
+                {
+                  "id": "3",
+                  "attributes": {
+                    "displayName": "C#",
+                    "slug": "c-1"
+                  }
+                },
+                {
+                  "id": "2",
+                  "attributes": {
+                    "displayName": "JavaScript",
+                    "slug": "java-script"
+                  }
+                }
+              ]
+            },
+            "author": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "displayName": "Thiago Silva",
+                  "slug": "thiago-silva"
+                }
+              }
+            },
+            "content": "<h1>Titulo</h1><p><strong>Bold</strong></p><p><i><strong>Italic Bold</strong></i></p><p>Underline</p><p><code>Code Example</code></p><figure class=\"image image-style-side\"><img src=\"https://res.cloudinary.com/dfnyq9hse/image/upload/v1697896397/depressao_em_caes_83051f3c90.jpg\" alt=\"depressão-em-cães.jpg\"></figure><p><a href=\"https://www.youtube.com/\">https://www.youtube.com/</a>&nbsp;</p><p>Image dog On the side</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Full Image</p><p>&nbsp;</p><p><img src=\"https://res.cloudinary.com/dfnyq9hse/image/upload/v1697896397/depressao_em_caes_83051f3c90.jpg\" alt=\"depressão-em-cães.jpg\"></p><ul><li>List 1</li><li>list 2</li></ul><p>list 3</p><figure class=\"table\"><table><tbody><tr><td>Table 1</td><td>Table 2</td><td>Table 3</td><td>Table 4</td></tr><tr><td>Table Exemples</td><td>Table Exemples</td><td>Table Exemples</td><td>Table Exemples</td></tr></tbody></table></figure>",
+            "publishedAt": "2023-10-21T14:14:12.539Z",
+            "createdAt": "2023-10-21T14:13:59.239Z"
+          }
+        }
+      ]
+    }
+  }
+}

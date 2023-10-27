@@ -1,0 +1,61 @@
+fragment tag on Tag {
+  displayName
+  slug
+}
+
+fragment PostAttributes on Post {
+  title
+  slug
+  cover {
+    data {
+      id
+      attributes {
+        name
+        alternativeText
+        url
+      }
+    }
+  }
+  excerpt
+  allowComments
+  tags {
+    data {
+      id
+      attributes {
+        ...tag
+      }
+    }
+  }
+  categories {
+    data {
+      id
+      attributes {
+        displayName
+        slug
+      }
+    }
+  }
+  author {
+    data {
+      id
+      attributes {
+        displayName
+        slug
+      }
+    }
+  }
+  content
+  publishedAt
+  createdAt
+}
+
+query GET_ALL_POSTS {
+  posts {
+    data {
+      id
+      attributes {
+        ...PostAttributes
+      }
+    }
+  }
+}
