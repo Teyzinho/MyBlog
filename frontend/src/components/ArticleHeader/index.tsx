@@ -24,7 +24,9 @@ export const ArticleHeader = ({
 }: ArticleHeaderProps) => {
   return (
     <Styled.Container>
-      <Heading as="h1">{title}</Heading>
+      <Heading as="h1" size="huge">
+        {title}
+      </Heading>
       <p>{excerpt}</p>
       <Styled.Image
         src={cover.data.attributes.url}

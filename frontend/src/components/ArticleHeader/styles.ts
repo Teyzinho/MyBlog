@@ -7,7 +7,7 @@ export const Container = styled.header`
     }
 
     p {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
     }
 
     padding-bottom: ${({ theme }) => theme.spacings.medium};
