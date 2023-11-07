@@ -1,5 +1,6 @@
 import { ArticleHeader, ArticleHeaderProps } from '../ArticleHeader';
 import { HtmlContent } from '../HtmlContent';
+import { PostContainer } from '../PostContainer';
 import * as Styled from './styles';
 
 export type PostProps = ArticleHeaderProps & {
@@ -17,15 +18,19 @@ export const Post = ({
 }: PostProps) => {
   return (
     <Styled.Container>
-      <ArticleHeader
-        author={author}
-        categories={categories}
-        cover={cover}
-        createdAt={createdAt}
-        excerpt={excerpt}
-        title={title}
-      />
-      <HtmlContent html={content} />
+      <PostContainer size="max">
+        <ArticleHeader
+          author={author}
+          categories={categories}
+          cover={cover}
+          createdAt={createdAt}
+          excerpt={excerpt}
+          title={title}
+        />
+      </PostContainer>
+      <PostContainer size="content">
+        <HtmlContent html={content} />
+      </PostContainer>
     </Styled.Container>
   );
 };
