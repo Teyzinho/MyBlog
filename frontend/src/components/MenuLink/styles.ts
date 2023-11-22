@@ -9,6 +9,7 @@ export const Container = styled.a`
     font-size: 1.8rem;
     border-right: 0.5rem solid ${theme.colors.primary};
     transition: all 300ms ease-in-out;
+    cursor: pointer;
     &:hover {
       border-right: 0.5rem solid ${theme.colors.secondary};
       color: ${theme.colors.secondary};
